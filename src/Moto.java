@@ -14,6 +14,10 @@ public class Moto extends Vehiculo {
         this.tipoManillar = tipoManillar;
         this.posaPies = posaPies;
     }
+    @Override
+    public void detenerse() {
+        System.out.println("La moto se ha detenido");
+    }
 
     public void arrancar(){
         System.out.println("La moto ha arrancado");
@@ -38,5 +42,19 @@ public class Moto extends Vehiculo {
     public void setPosaPies(String posaPies) {
         this.posaPies = posaPies;
     }
+
+
+    @Override
+    public String toString() {
+        return "Datos de la moto:"+
+                "\nTipo de Manillar= " + tipoManillar + 
+                "\nEstilo de Posa Pies= " + posaPies + 
+                "\nNúmero de Llantas= " + numLlantas+
+                "\nColor" + color + 
+                "\nMarca= " + marca +
+                "\nAño= " + anio +
+                "\nModelo= " + modelo ;
+    }
+    
     
 }

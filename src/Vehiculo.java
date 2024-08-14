@@ -1,9 +1,9 @@
 public abstract class Vehiculo {
-    private String numLlantas;
-    private String color;
-    private String marca;
-    private String anio;
-    private String modelo;
+    protected String numLlantas;
+    protected String color;
+    protected String marca;
+    protected String anio;
+    protected String modelo;
 
     
     
@@ -20,6 +20,7 @@ public abstract class Vehiculo {
         this.modelo = modelo;
     }
 
+    public abstract void detenerse();
 
     public void arrancar(){
         System.out.println("El vehículo ha arrancado");
@@ -27,9 +28,7 @@ public abstract class Vehiculo {
     public void moverse(){
         System.out.println("El vehículo se ha movido");
     }
-    public void detenerse(){
-        System.out.println("El vehículo se ha detenido");
-    }
+   
     public String getNumLlantas() {
         return numLlantas;
     }

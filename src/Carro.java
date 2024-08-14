@@ -18,6 +18,13 @@ public class Carro extends Vehiculo {
         this.categoriaPeaje = categoriaPeaje;
     }
 
+    @Override
+    public void detenerse() {
+        System.out.println("El carro se ha detenido");
+    }
+
+
+
     public void arrancar(){
         System.out.println("El carro ha arrancado");
     }
